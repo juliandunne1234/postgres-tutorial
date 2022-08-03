@@ -10,20 +10,20 @@ cursor = connection.cursor()
 # Import for psycopg2 format that single quotes contain the statement
 # cursor.execute('SELECT * FROM "Artist"')
 
-# Query 2 - select only the "Name" column from "Artist" table
-# cursor.execute('SELECT "Name" FROM "Artist"')
+    # Query 2 - select only the "Name" column from "Artist" table
+    # cursor.execute('SELECT "Name" FROM "Artist"')
 
-# Query 3 - select only "Queen" from "Artist" table
-# cursor.execute('SELECT * FROM "Artist" WHERE "Name" = %s', ["Queen"])
+    # Query 3 - select only "Queen" from "Artist" table
+    # cursor.execute('SELECT * FROM "Artist" WHERE "Name" = %s', ["Queen"])
 
-# Query 4 - select only by "ArtistId" #51 from the "Artist" table
-# cursor.execute('SELECT * FROM "Artist" WHERE "ArtistId" = %s', [51])
+    # Query 4 - select only by "ArtistId" #51 from the "Artist" table
+    # cursor.execute('SELECT * FROM "Artist" WHERE "ArtistId" = %s', [51])
 
-# Query 5 - select only the albums with "ArtistId" #51 on the "Album" table
-# cursor.execute('SELECT * FROM "Album" WHERE "ArtistId" = %s', [51])
+    # Query 5 - select only the albums with "ArtistId" #51 on the "Album" table
+    # cursor.execute('SELECT * FROM "Album" WHERE "ArtistId" = %s', [51])
 
-# Query 6 - select all tracks where the composer is "Queen" from the "Track" table
-# cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Queen"])
+    # Query 6 - select all tracks where the composer is "Queen" from the "Track" table
+    # cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Queen"])
 
 # Query 7 - select all tracks where the composer is "Test" from the "Track" table
 cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Test"])
